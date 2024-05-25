@@ -1,10 +1,10 @@
 /// <reference types="Cypress" />
 //* ^^ hace funcionar los comandos de cypress
 
-describe("", ()=>{
+describe('', ()=>{
 
-    it("", ()=>{
-        cy.visit("");
+    it('', ()=>{
+        cy.visit('');
     })
 
 })
