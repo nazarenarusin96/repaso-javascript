@@ -26,9 +26,9 @@ setTimeout(()=>{
     console.log("Segundo proceso");
     resove(a) //!resolveme la variable a
 })
-},3000)
+},3000) //! Se setea la cantindad de milisegundos que quiere que espere por la funcion setTimeout
 
 //! Se llama la promesa con la función entonces, se le pasa un parametro que es el resolve de la funcion y lo imprime
 promesa.then(res=>{
-    console.log("Tercer proceso resultado: "+res);
+    console.log("Tercer proceso resultado: "+res); //! res = resolve
 })
