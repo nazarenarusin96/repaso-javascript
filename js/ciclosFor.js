@@ -1,4 +1,6 @@
-/*let x=0;
+//*Función que muestra mediante un for la cantidad de veces que se quiere ejecutar las suma de manera hardcodeada y muestra su resultado
+
+let x=0;
 let=a=0;
 let=b=0;
 let=c=0;
@@ -7,10 +9,10 @@ let=d=0
 let e=0;
 let suma=0;
 
-let num=parseInt(prompt("Ingrese cantidad de veces que se quiere repetir el ciclo for: "))
+let num1=parseInt(prompt("Ingrese cantidad de veces que se quiere repetir el ciclo for: "))
 
 for(x=0; x<=2;x++){
-//console.log("El numero se repite: "+x);
+console.log("El numero se repite: "+x);
 
 a=parseInt(prompt("Ingrese a: "))
 b=parseInt(prompt("Ingrese b: "))
@@ -20,7 +22,8 @@ c=a+b
 alert("El resultado de c es: "+ c);
 }
 
-for(x=1;x<=num;x++){
+//*Función que muestra mediante un for el resultado de una suma mediante 
+for(x=1;x<=num1;x++){
     d=parseInt(prompt("Ingrese d: "))
     e=parseInt(prompt("Ingrese e: "))
     suma=d+e
@@ -59,12 +62,12 @@ console.log(frutas.length);
 
 for(x=0; x<frutas.length;x++){
 console.log("Fruta numero: "+x+"="+frutas[x]);
-}*/
+}
 
 //* Recorrer array con foreach
 
-let frutas=["Naranja", "Pera", "Manzana", "Sandía"]
+let frutas2=["Naranja", "Pera", "Manzana", "Sandía"]
 
-frutas.forEach(function(elemento, indice, array){
+frutas2.forEach(function(elemento, indice, array){
     console.log(indice, elemento);
 })
