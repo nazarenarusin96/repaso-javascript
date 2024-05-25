@@ -5,11 +5,6 @@
 
 describe("formas de encontrar un elemento", ()=>{
 
-    /// <reference types="Cypress" />
-//* ^^ hace funcionar los comandos de cypress
-
-
-
     it('create user', ()=>{
         cy.visit('http://localhost:3000/signin'); //? Ingresa a la página mediante localhost:3000
 
@@ -46,6 +41,23 @@ describe("formas de encontrar un elemento", ()=>{
         cy.get('#password').type("pass1234"); //* selecciona el input typea la contraseña
 
         cy.get('.MuiButton-label').click(); //* selecciona el boton para enviar los datos e ingresa al sistema
+
+        console.log("Ingresando datos bancarios");
+
+        //! Esto debe ejecutarse solo una vez para que quede guardado en la database, si no tirara error
+
+        /*cy.get('[data-test="user-onboarding-next"] > .MuiButton-label').click() //* Clickea botón next
+
+        cy.get('#bankaccount-bankName-input').type("Banquito Bancario") //* Selecciona input e ingresa el nombre del banco
+
+        cy.get('#bankaccount-routingNumber-input').type("123456789") //* Selecciona input e ingresa el numero requerido
+
+        cy.get('#bankaccount-accountNumber-input').type("12345678910") //* Selecciona input e ingresa el numero requerido
+
+        cy.get('[data-test="bankaccount-submit"]').click() //? selecciona el boton para enviar los datos del banco y los registra en la data base
+
+        cy.get('[data-test="user-onboarding-next"] > .MuiButton-label').click()*/
     })
 
+    
 })
