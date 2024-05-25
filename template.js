@@ -4,7 +4,7 @@
 describe("", ()=>{
 
     it("", ()=>{
-        cy,visit("");
+        cy.visit("");
     })
 
 })
