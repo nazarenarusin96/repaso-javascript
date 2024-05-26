@@ -1,0 +1,3 @@
+Ejecuta los casos de prueba sin entorno grafico en modo consola
+
+node_modules\.bin\cypress run
