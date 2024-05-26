@@ -42,7 +42,7 @@ describe("formas de encontrar un elemento", ()=>{
 
         cy.get('.MuiButton-label').click(); //* selecciona el boton para enviar los datos e ingresa al sistema
 
-        console.log("Ingresando datos bancarios");
+        cy.log("###-INGRESANDO DATOS BANCARIOS-###")
 
         //! Esto debe ejecutarse solo una vez para que quede guardado en la database, si no tirara error
 
@@ -57,7 +57,16 @@ describe("formas de encontrar un elemento", ()=>{
         cy.get('[data-test="bankaccount-submit"]').click() //? selecciona el boton para enviar los datos del banco y los registra en la data base
 
         cy.get('[data-test="user-onboarding-next"] > .MuiButton-label').click()*/
+
+        cy.get('[data-test="sidenav-bankaccounts"]').click() //* Clickea el boton cuentas de banco
+
+        cy.get('[data-test="bankaccount-new"]').click() //* Clickea el boton de añadir cuenta de banco nueva
+
+        //! Manera que acorta las funciones y se pueden hacer cadenas de acciones para optimizar el codigo
+
+        cy.get('#bankaccount-bankName-input').type("probando").clear().type("pruebita") //*? Selecciona el input del nombre del banco, escribe un texto, lo borra y vuelve a escribir
     })
 
     
 })
+ 
