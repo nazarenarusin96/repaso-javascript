@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //* ^^ hace funcionar los comandos de cypress
 
-describe('', ()=>{
+describe('Ejecutando funciones para subir y bajar por la página', ()=>{
 
     it.only('pageUp', ()=>{
         cy.log("Caso de prueba utilizando funcion only")
