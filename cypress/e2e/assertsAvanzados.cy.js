@@ -21,7 +21,7 @@ describe('Comenzando con Asserts mas avanzados', ()=>{
         cy.get(".container").find(".card").eq(1).click(); //? Busca por un div con clase que contiene varios elementos con la misma clase, selecciona un elemento y ejecuta el click
     })
 
-    it.('encontrando y validando por texto', ()=>{
+    it('encontrando y validando por texto', ()=>{
         cy.visit('https://practicesoftwaretesting.com/#/category/hand-tools');
 
         //!Promesa que extrae el texto, lo pasa a una variable que valida que si lo que esta guardado en la variable es lo que se ve reflejado en el cy.log, mostrara un mensaje de validación exitoso
