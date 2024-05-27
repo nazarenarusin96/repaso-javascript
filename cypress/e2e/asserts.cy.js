@@ -40,4 +40,16 @@ describe('cuentas asserts', ()=>{
     it('es mayor a 10', ()=>{
         expect(25).to.be.greaterThan(10);
     })
+
+    it('Verificando si un campo es visible', ()=>{
+        cy.visit('https://qa-practice.netlify.app/register');
+
+        cy.get('#firstName').should("be.visible").type("Naza");
+
+        //cy.get('#firstNamee').should("be.visible"); //! Caso en el que no se encuentre visible erroneo
+
+        cy.wait(1000)
+
+        cy.get('#lastName').should("be.visible").should("be.enabled").type("Rusin")
+    })
 })
