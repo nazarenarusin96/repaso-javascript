@@ -42,14 +42,14 @@ describe('cuentas asserts', ()=>{
     })
 
     it('Verificando si un campo es visible', ()=>{
-        cy.visit('https://qa-practice.netlify.app/register');
+        cy.visit('https://qa-practice.netlify.app/register'); //* Ingresa a la url ingresada
 
-        cy.get('#firstName').should("be.visible").type("Naza");
+        cy.get('#firstName').should("be.visible").type("Naza"); //?En el caso de que el input sea visible, ingresa datos
 
         //cy.get('#firstNamee').should("be.visible"); //! Caso en el que no se encuentre visible erroneo
 
-        cy.wait(1000)
+        cy.wait(1000) //Espera
 
-        cy.get('#lastName').should("be.visible").should("be.enabled").type("Rusin")
+        cy.get('#lastName').should("be.visible").should("be.enabled").type("Rusin") //?En el caso de que el input sea visible y este habilitado, ingresa datos
     })
 })
