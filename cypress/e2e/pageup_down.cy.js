@@ -3,6 +3,10 @@
 
 describe('', ()=>{
 
+    it.only('pageUp', ()=>{
+        cy.log("Caso de prueba utilizando funcion only")
+    })
+
     it('pageUp', ()=>{
         cy.visit('https://qa-practice.netlify.app/register');
 
