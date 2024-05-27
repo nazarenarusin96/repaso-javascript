@@ -45,5 +45,4 @@ describe('Ejemplos tipos de selectores', ()=>{
         cy.get("#firstName").should("be.visible").type("Naza"); //? Copia directamente el selector por la lista de inspeccionar, si lo ve visible entonces typea
     })
 
-
 })
