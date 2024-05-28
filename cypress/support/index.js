@@ -1,4 +1,7 @@
+import "cypress-real-events";
+
 class indexPage{
+    
     constructor(){
         this.searchInput = ".pnt-contenedor-buscador > .btn"
         this.searchButton = ".pnt-img-lupa"
