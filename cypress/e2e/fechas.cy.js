@@ -5,7 +5,7 @@ require("cypress-plugin-tab");
 
 describe('Funciones para fechas', ()=>{
 
-    it('Fuerza a elefir la fecha actual', ()=>{
+    it('Fuerza a elegir la fecha actual', ()=>{
         cy.visit('https://qa-practice.netlify.app/calendar');
 
         cy.get('#calendar').should("be.visible").click();
