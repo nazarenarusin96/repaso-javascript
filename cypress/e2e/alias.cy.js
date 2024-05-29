@@ -13,7 +13,7 @@ describe('Manejo de los alias', ()=>{
         cy.get("@nombre").type("Nazarena"); //* Llama al alias creado
     })
 
-    it.only('Registro avanzado con alias', ()=>{
+    it('Registro avanzado con alias', ()=>{
         cy.visit('https://qa-practice.netlify.app/register');
 
         //! .as() es para crear una variable cuando se tiene que repetir varias veces en el código
