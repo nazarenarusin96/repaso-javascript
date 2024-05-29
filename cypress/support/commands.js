@@ -23,3 +23,38 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('escribir_texto', (selector, texto, t) => { 
+    let tiempo=t;
+
+    cy.get(selector).should("be.visible").type(texto);
+    cy.wait(tiempo);
+})
+
+Cypress.Commands.add('click_force', (selector, t) => { 
+    let tiempo=t;
+
+    cy.get(selector).should("be.visible").click({force:true});
+    cy.wait(tiempo);
+})
+
+ Cypress.Commands.add('register', (selector, name, lastName, phone, country, pass, email, check, t) => { 
+
+    //let tiempo=t;
+
+    cy.get(selector).should("be.visible").type(name);
+
+    cy.get(selector).should("be.visible").type(lastName);
+
+    cy.get(selector).should("be.visible").type(phone);
+
+    cy.get(selector).should("be.visible").select(country);
+
+    cy.get(selector).should("be.visible").type(pass);
+
+    cy.get(selector).should("be.visible").type(email);
+
+    cy.get(selector).should("be.visible").check(check).should("be.checked");
+
+    cy.get(selector).should("be.visible").click({force:true});
+ })
