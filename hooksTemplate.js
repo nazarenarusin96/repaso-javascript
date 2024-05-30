@@ -1,7 +1,11 @@
 /// <reference types="Cypress" />
 //* ^^ hace funcionar los comandos de cypress
 
+import  pageObjects from "../support/pageObjects"
+
 describe('Plantilla hooks', ()=>{
+
+    const master = new pageObjects();
 
     before(()=>{
         cy.log("Se ejecuta al Principio");
