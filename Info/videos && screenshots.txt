@@ -1,6 +1,9 @@
 Comandos
 
 ###Video###
+
+Para ejecutar este comando, no se debe de estar corriendo cypress
+
 npx cypress run --spec "ruta del caso de prueba"
 
 ###Screenshots###
