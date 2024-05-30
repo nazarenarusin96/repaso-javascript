@@ -1,0 +1,8 @@
+Comandos
+
+###Video###
+npx cypress run --spec "ruta del caso de prueba"
+
+###Screenshots###
+
+cy.screenshot("nombre de la captura");

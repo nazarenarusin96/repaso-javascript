@@ -82,6 +82,8 @@ class pageObjects{
             cy.log("El "+nombre+" no es valido");
     
             cy.log("###########################");
+
+            cy.screenshot("error login"); //! la función screenshot para que se ejecute va en pageObjects
         })
 
     }
