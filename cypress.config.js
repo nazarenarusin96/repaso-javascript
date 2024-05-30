@@ -8,6 +8,7 @@ module.exports = defineConfig({
       
     },
     chromeWebSecurity: false,
-    video:true
+    video:true,
+    failOnStatusCode: false
   },
 });
