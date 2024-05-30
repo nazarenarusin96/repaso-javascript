@@ -38,23 +38,41 @@ Cypress.Commands.add('click_force', (selector, t) => {
     cy.wait(tiempo);
 })
 
- Cypress.Commands.add('register', (selector, name, lastName, phone, country, pass, email, check, t) => { 
+ Cypress.Commands.add('register', (name, message) => { 
 
-    //let tiempo=t;
+    cy.get('#title').should('be.visible').type(name);
+    cy.get("#description").should("be.visible").type(message);
+    cy.get("#btn-submit").should("be.visible").click({force:true});
+ })
 
-    cy.get(selector).should("be.visible").type(name);
+ Cypress.Commands.add('register_Qa_Practice', (name, lastName, phone, country, email, pass, t) => { 
 
-    cy.get(selector).should("be.visible").type(lastName);
+    let tiempo=t;
 
-    cy.get(selector).should("be.visible").type(phone);
+    cy.get('#firstName').should('be.visible').type(name);
+    cy.wait(tiempo)
+    cy.get("#lastName").should("be.visible").type(lastName);
+    cy.wait(tiempo)
+    cy.get("#phone").should("be.visible").type(phone);
+    cy.wait(tiempo)
+    cy.get("#countries_dropdown_menu").should("be.visible").select(country);
+    cy.wait(tiempo)
+    cy.get("#emailAddress").should("be.visible").type(email);
+    cy.wait(tiempo)
+    cy.get("#password").should("be.visible").type(pass);
+    cy.wait(tiempo)
+    cy.get("#exampleCheck1").should("be.visible").check().should("be.checked");
+    cy.wait(tiempo)
+    cy.get("#registerBtn").should("be.visible").click({force:true});
+ })
 
-    cy.get(selector).should("be.visible").select(country);
+ Cypress.Commands.add('validandoCampo', (men, nombre) => { 
 
-    cy.get(selector).should("be.visible").type(pass);
+    cy.get('#emailAddress').should("be.visible").should("contain", men).then(()=>{
+        cy.log("###########################");
 
-    cy.get(selector).should("be.visible").type(email);
+        cy.log("El "+nombre+" no es valido");
 
-    cy.get(selector).should("be.visible").check(check).should("be.checked");
-
-    cy.get(selector).should("be.visible").click({force:true});
+        cy.log("###########################");
+    })
  })

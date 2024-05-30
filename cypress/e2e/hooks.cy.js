@@ -22,5 +22,7 @@ describe('Plantilla hooks', ()=>{
         cy.get('#checkbox1').check().should("be.checked");
         cy.wait(1000)
         cy.get('#checkbox1').uncheck().should("not.be.checked");
+
+        cy.log("probando")
     })
 })
