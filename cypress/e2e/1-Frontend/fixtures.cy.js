@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //* ^^ hace funcionar los comandos de cypress
 
-import  pageObjects from "../support/pageObjects" //! Se importa pageObjects.js
+import  pageObjects from "../../support/pageObjects" //! Se importa pageObjects.js
 
 describe('Fixtures', ()=>{
 

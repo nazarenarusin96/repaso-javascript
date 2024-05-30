@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //* ^^ hace funcionar los comandos de cypress
 
-import  pageObjects from "../support/pageObjects" //! Se importa page Objects
+import  pageObjects from "../../support/pageObjects" //! Se importa page Objects
 
 describe('Plantilla hooks', ()=>{
 

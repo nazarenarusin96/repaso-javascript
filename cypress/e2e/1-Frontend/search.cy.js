@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 //* ^^ hace funcionar los comandos de cypress
 
-import indexPage from "../support/index";
+import indexPage from "../../support/index";
 
 describe('Test busqueda', ()=>{
 
