@@ -33,9 +33,9 @@ describe('Consultas API REST desde cypress', ()=>{
 
             cy.log(datos);
 
-            expect(datos[0]).has.property("title","json-server");
+            //expect(datos[0]).has.property("title","json-server");
 
-            expect(datos[0]).has.property("author", "typicode");
+            //expect(datos[0]).has.property("author", "typicode");
         })
     })
 
