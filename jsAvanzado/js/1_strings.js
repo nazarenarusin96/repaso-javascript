@@ -60,10 +60,12 @@ console.log(pulgadas.slice(2,1)); //! No va a mostrar nada en consola porque no 
 console.log(pulgadas.substring(0, 10));
 console.log(pulgadas.substring(2,1)); //! Va a dar vuelta los números para que la función sea válida (es más inteligente)
 
+//? Repite la cantidad de veces deseada un texto
 const texto = "En promoción".repeat(3);
 
 console.log(texto);
 
+//? Diferentes manersa de separar un array
 const actividad = "Realizando pruebas en javascript";
 console.log(actividad.split(" "));
 
@@ -73,6 +75,7 @@ console.log(hobbies.split(" "));
 const tweet = "Probando funciones con #Hashtag"
 console.log(tweet.split("#"));
 
+//? Mayusculas y Minusculas
 const mayusculas = "Monitor 20 Pulgadas";
 
 console.log(mayusculas.toUpperCase());
@@ -83,6 +86,7 @@ const email ="CORREO@CORREO.COM"
 
 console.log(email.toLocaleLowerCase());
 
+//? Número en formato number y en formato string
 const precioNum = 300;
 
 console.log(precioNum);
