@@ -1,0 +1,63 @@
+Ctrl + Shift + P = Abre la paleta de comandos
+
+Ctrl + N = Crea nuevo archivo
+
+Ctrl + B = Oculta o muestra la barra lateral
+
+Ctrl + = Aumenta el tamaño de la fuente de vsc
+
+Ctrl - =Minimiza el tamaño de la fuente de vsc
+
+Ctrl K + Ctrl C = Comenta todo lo seleccionado
+
+Ctrl K + Ctrl U = Descomenta todo lo seleccionado
+
+Shift + Alt+ A = Genera un bloque de comentario
+
+Shift + Tab = Destabula
+
+Shift + Alt+ F = Ordena el código
+
+Alt + Flechas = Podes mover una línea de código sin tener que copiar y pegar
+
+Ctrl + Shift + K = Borra código seleccionado // Borra una linea de código
+
+F2 = Hay que poner el puntero arriba de la variable y apretar F2, esto nos permite poder cambiar el nombre de dicha variable
+
+Ctrl + Shift + C= Abre una terminal externa a vsc (lo abre en el directorio el proyecto)
+
+Ctrl + Shift + Ñ = Abre la terminal de vsc
+
+Ctrl + Tab + Enter = Navega entre las pestañas abiertas y las elige
+
+Ctrl + W = Cierra la pestaña seleccionada
+
+Ctrl + Shift + T = Abre la pestaña que cerraste
+
+Shift + Alt + Flechas = Copia y pega una linea de código seleccionada
+
+
+
+
+
+HTML
+
+ul>li*7= se pasa el elemento y lo multiplica por la cantidad deseada, en este caso se crearían <li>7</li> dentro de una <ul></ul>
+
+p>Lorem = Crea texto de prueba
+
+article*5>lorem5 = Crea etiquetas con texto de pocas palabras, en este caso 5
+
+p+a+article+div>h2 = Crea varias etiquetas seguidas
+
+(div>(ul>li*5>a))+nav>(ul>li*4>a) = Crea separaciones
+
+Ctrl + Alt + Flechas = Creación en base a multicursores (sirve para modificar varias lineas de código al mismo tiempo)
+
+Shift + flechas = Después de seleccionar el código con multicursores, ejecutanto esto te deja modificar la parte del código deseada
+
+Shift + Alt + Flechas = Habiendo seleccionado las líneas de código que se desean editar, se vuelve a ejecutar para poder seleccionar la primera palabra
+
+Ctrl + D = Posicionandose en una etiqueta, al ejecutar este atajo selecciona la etiqueta de cierre también
+
+Ctrl + Shift + L = Posicionandose en una etiqueta, al ejecutar este atajo selecciona la etiqueta de cierre también
