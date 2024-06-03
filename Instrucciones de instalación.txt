@@ -1,3 +1,10 @@
 npm install (Instala las dependencias para que se pueda ejecutar el código)
 
 npx cypress open (Levanta Cypress)
+
+Extensiones:
+
+Live Server
+Better Comments
+Error Lens
+Auto Rename Tag

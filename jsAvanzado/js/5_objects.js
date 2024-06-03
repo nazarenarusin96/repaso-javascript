@@ -1,5 +1,3 @@
-//"use strict"; //! Previene que un objeto sea modificado
-
 //* Un objecto agrupa todo en una sola variable
 
 //! En lugar de tener tantas variables, se pude crear un object que agrupa todas esas variables
