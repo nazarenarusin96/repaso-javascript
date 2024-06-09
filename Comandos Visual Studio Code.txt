@@ -6,7 +6,7 @@ Ctrl + B = Oculta o muestra la barra lateral
 
 Ctrl + = Aumenta el tamaño de la fuente de vsc
 
-Ctrl - =Minimiza el tamaño de la fuente de vsc
+Ctrl - = Minimiza el tamaño de la fuente de vsc
 
 Ctrl K + Ctrl C = Comenta todo lo seleccionado
 
