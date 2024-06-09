@@ -7,4 +7,4 @@ Extensiones:
 Live Server
 Better Comments
 Error Lens
-Auto Rename Tag
+Auto Rename Tag 
