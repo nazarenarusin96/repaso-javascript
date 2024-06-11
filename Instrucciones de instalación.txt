@@ -8,3 +8,5 @@ Live Server
 Better Comments
 Error Lens
 Auto Rename Tag 
+
+Se abre el html con click derecho y selecciona la opción Open with live server, en la página redireccionada se hace click derecho -> inspeccionar -> Console para poder ver el código js
