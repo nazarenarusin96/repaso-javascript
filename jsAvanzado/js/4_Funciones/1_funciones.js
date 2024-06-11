@@ -18,8 +18,22 @@ const sumita = function (){
 
 sumita();
 
+//#########################################################
+
 function saludo(nombre, apellido){
     console.log(`Nombre: ${nombre} - Apellido: ${apellido}`);
 }
 
 saludo("Nazarena", "Rusin");
+
+//#########################################################
+
+//* Parametros por default
+
+//* Colocando un valor por defecto en el caso de que no se haya ingresado los datos requeridos
+
+function saludo2(nombre, apellido = "Parámetro vacío"){
+    console.log(`Nombre: ${nombre} - Apellido: ${apellido}`);
+}
+
+saludo2("Nazarena");
